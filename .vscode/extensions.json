@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "formulahendry.dotnet-test-explorer",
+    "visualstudioonlineapplicationinsights.application-insights",
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.blazorwasm-companion",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
