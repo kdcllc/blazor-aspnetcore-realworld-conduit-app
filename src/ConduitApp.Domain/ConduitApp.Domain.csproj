@@ -9,4 +9,15 @@
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bet.BuildingBlocks.Domain.Abstractions" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Bet.BuildingBlocks.Domain.Abstractions" />
+    <Using Include="Bet.BuildingBlocks.Domain.Abstractions.Interfaces" />
+    <Using Include="MediatR" />
+  </ItemGroup>
+  
 </Project>

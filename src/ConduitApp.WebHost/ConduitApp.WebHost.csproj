@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ConduitApp.Client.Wasm\ConduitApp.Client.Wasm.csproj" />
     <ProjectReference Include="..\ConduitApp.Domain\ConduitApp.Domain.csproj" />
+    <ProjectReference Include="..\ConduitApp.Infrastructure\ConduitApp.Infrastructure.csproj" />
   </ItemGroup>
 
 

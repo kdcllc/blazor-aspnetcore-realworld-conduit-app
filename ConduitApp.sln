@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConduitApp.Client.UnitTests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConduitApp.Components", "src\ConduitApp.Components\ConduitApp.Components.csproj", "{419ABF5A-BB66-44F4-A62A-1AB1ECC32C2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConduitApp.Infrastructure", "src\ConduitApp.Infrastructure\ConduitApp.Infrastructure.csproj", "{8CADE5D0-D946-4BBB-990C-419044731CE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{419ABF5A-BB66-44F4-A62A-1AB1ECC32C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{419ABF5A-BB66-44F4-A62A-1AB1ECC32C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{419ABF5A-BB66-44F4-A62A-1AB1ECC32C2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CADE5D0-D946-4BBB-990C-419044731CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CADE5D0-D946-4BBB-990C-419044731CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CADE5D0-D946-4BBB-990C-419044731CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CADE5D0-D946-4BBB-990C-419044731CE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{15C2C7DF-2B0C-4D16-BC96-311B5732B6DE} = {8287D878-A6F8-4E9F-9B3D-39EF57C4FC8C}
@@ -53,5 +59,6 @@ Global
 		{860197A4-D3C9-4DC8-8D9F-34EA161FE30C} = {8287D878-A6F8-4E9F-9B3D-39EF57C4FC8C}
 		{A4AA9FB8-BFB0-48D6-9FD0-FC57EDF1B185} = {46D746FC-6F1D-4650-B840-DE48A892110C}
 		{419ABF5A-BB66-44F4-A62A-1AB1ECC32C2F} = {8287D878-A6F8-4E9F-9B3D-39EF57C4FC8C}
+		{8CADE5D0-D946-4BBB-990C-419044731CE7} = {8287D878-A6F8-4E9F-9B3D-39EF57C4FC8C}
 	EndGlobalSection
 EndGlobal

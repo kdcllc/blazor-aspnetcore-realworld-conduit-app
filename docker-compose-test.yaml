@@ -1,0 +1,18 @@
+version: "3.9"
+
+# docker-compose -f "docker-compose-test.yaml" up -d
+# docker-compose -f "docker-compose-test.yaml" down
+
+networks:
+  conduitapp-network:
+
+services:
+  conduitapp-sqlserver:
+    image: "mcr.microsoft.com/mssql/server"
+    ports:
+      - "1433:1433"
+    environment:
+        SA_PASSWORD: "2fb038c8-232c-425c-be0f-f72bfb01bb8a"
+        ACCEPT_EULA: "Y"
+    networks:
+      - conduitapp-network

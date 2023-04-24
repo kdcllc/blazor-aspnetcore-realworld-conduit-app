@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bet.BuildingBlocks.Application.Abstractions" Version="2.0.1" />
+    <PackageReference Include="Bet.BuildingBlocks.Domain.Abstractions" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SQlite" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Bet.BuildingBlocks.Domain.Abstractions" />
+    <Using Include="Bet.BuildingBlocks.Domain.Abstractions.Interfaces" />
+    <Using Include="Bet.BuildingBlocks.Domain.Abstractions.Specifications" />
+    <Using Include="Bet.BuildingBlocks.Domain.Abstractions.Specifications.Interfaces" />
+    <Using Include="Microsoft.EntityFrameworkCore" />
+    <Using Include="MediatR" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConduitApp.Domain\ConduitApp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

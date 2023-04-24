@@ -26,7 +26,13 @@ The goal was to develop this application on Linux with VSCode.
 
 ## Getting started
 
-> npm install, npm start, etc.
+```bash
+    dotnet tool install
+
+    # once this project has ran, the entire database is being created. This project doesn't use EF Migrations.
+    dotnet run  --project ./src/ConduitApp.WebHost/ConduitApp.WebHost.csproj
+    
+```
 
 
 ### Blazor Testing

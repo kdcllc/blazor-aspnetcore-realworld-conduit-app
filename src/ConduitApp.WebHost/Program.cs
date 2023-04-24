@@ -1,3 +1,4 @@
+using ConduitApp.Infrastructure;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+builder.Services.AddDb();
+
 var app = builder.Build();
+
+using var scope = ((IApplicationBuilder)app).ApplicationServices.CreateScope();
+var dbContext = scope.ServiceProvider.GetRequiredService<ConduitAppContext>();
+dbContext.Database.EnsureCreated();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
